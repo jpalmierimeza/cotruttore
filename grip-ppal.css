@@ -1,0 +1,90 @@
+
+/* General body styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Poppins';
+  background-color: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+.sidebar {
+  flex: 1;
+  min-width: 500px auto;
+  background-color: #fff;
+  padding: 1px;
+  border-radius: 2px;
+}
+
+.main-content {
+  flex: 3;
+  min-width: 300px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+article {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  
+  
+}
+
+h2 {
+  font-size: 1.4em;
+  color: #000000;
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 1.6;
+  color: #000000;
+  text-align: justify;
+  
+}
+
+/* Sidebar Section Styles */
+.sidebar .section {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.sidebar .section-1 {
+  background-color:#e7e5e5; /* Color para la Sección 1 */
+}
+
+.sidebar .section-2 {
+  background-color: #e7e5e5; /* Color para la Sección 2 */
+}
+
+.sidebar .section-3 {
+  background-color: #e7e5e5; /* Color para la Sección 3 */
+}
+
+/* Responsive Design */
+@media (max-width: 319px) {
+  .container {
+      flex-direction: column;
+      min-width: auto;
+      width: 100%;
+  }
+
+  .sidebar, .main-content {
+      width: 100%;
+      
+  }
+}
